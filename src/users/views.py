@@ -20,7 +20,7 @@ def login_view(request):
             else:
                 messages.error(request, f'Unable to login Try Again')
         else:
-            messages.error(request, f'Login Failed Try Again')
+            messages.error(request, f'Login Failed Please Try Again')
     elif request.method == 'GET':
         login_form = AuthenticationForm()
     return render(request, 'views/login.html', {'login_form': login_form})
