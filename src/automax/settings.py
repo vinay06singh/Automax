@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+from django.contrib.messages import constants as messages
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -103,6 +104,18 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+#Login setting
+LOGIN_REDIRECT= '/home/'
+LOGIN_URL= '/login/'
+
+
+#Message setting
+MESSAGE_TAGS={
+    messages.ERROR: 'danger'
+}
+
 
 
 # Internationalization
