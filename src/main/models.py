@@ -1,8 +1,10 @@
 import uuid
 from django.db import models
+
+from .consts import CARS_BRANDS, TRANSMISSION_OPTIONS
 from users.models import Profile, Location
-from .consts import CARS_BRANDS,TRANSMISSION_OPTIONS
-from.utils import user_listing_path
+from .utils import user_listing_path
+
 # Create your models here.
 
 class Listing(models.Model):
