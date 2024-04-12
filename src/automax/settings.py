@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'localflavor',
     'main',
     'users',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
